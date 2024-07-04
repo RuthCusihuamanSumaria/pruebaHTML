@@ -1,0 +1,120 @@
+/*box model
+
+Para resetear los estilos por defecto de los 
+navegadores de forma efectiva, utilizamos 
+las propiedades margin, que define el margen en 
+los cuatro lados del elemento (arriba, derecha,
+ abajo, izquierda), y padding, que define el 
+ relleno interno en los mismos cuatro lados del
+  elemento,
+ ambas con un valor de 0.*/
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ /*@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');*/
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box; /*ancho y el alto totales de un elemento*/
+    background-color: rgb(128,128,128);
+    color:#000000;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    /*height: 100vh;/*altura*/
+    
+}
+/*
+strong{
+    color:aqua
+}
+    */
+h2{
+    font-weight: bold;
+}
+span{
+    color: #22D4FD;
+    border: 1px solid #22D4FD;
+    padding: 10px;
+}
+.titulo-destaque{
+    color: #00fd0e;;
+}
+
+.presentacion{
+    display: flex;/*flexbox: forma dinamica y diseño flexible*/
+    align-items: center; /*alinealos elementos del contenedor*/
+    margin:10% 15%; /*margen*//* agrega un margen para centrar los cuadrados en la pantalla */
+    justify-content: space-between;
+}
+
+.presentacion_contenido{
+    width: 615px;/*ancho*/
+    display:flex;
+    flex-direction: column;
+    /*tamaño de los espacios entre filas y columnas en diseños de cuadrícula*/
+    gap: 40px;
+}
+
+.presentacion_contenido_titulo{
+
+    font-size: 36px;
+    font-family: "Krona One", sans-serifs;
+}
+
+.presentacion_contenido_texto{
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.presentacion_enlaces{
+    display: flex;/* coloca los cuadrados uno al lado del otro */
+    justify-content: space-between;
+    flex-direction: column;/*coloca el contenido de manera vertical*/
+    align-items: center;/*botones al centro*/
+    gap:32px;  /* agrega espacios iguales entre cada cuadrado */
+}
+
+.presentacion_enlaces_subtitulo{
+    font-family: 'Krona One' , sans serif;
+    font-size: 24px;
+    font-weight: 400;
+    
+}
+
+.presentacion_enlaces_link{
+    width: 378px;
+    /*background-color: #22D4FD;*/
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;/*bordes de los enlaces sean redondeados*/
+    font-family: "Montserrat" , sans-serif;
+    font-size:24px;
+    font-weight: 600;
+    text-decoration: none;/*eliminar las decoraciones del elemento de anclaje*/
+    color:#f6f6f6; /*color*/
+    
+    display: flex;
+    justify-content: center;
+    border:2px solid #22D4FD;/*dotted: puntos suspensivos alrededor de los botones*/
+    gap: 16px;/* valor de espaciado identificado en el Figma */
+}
+
+.presentacion_enlaces_link:hover{
+    background-color: #272727;/*cambiar el color de fondo del botón a un tono de negro más claro al pasar el mouse sobre él*/
+    border:2px solid #0000ff;/*borde azul alrededor del botón cuando el mouse esté sobre él*/
+    /*cursor: pointer;/*cambiar el estilo del cursor a una mano con el dedo índice levantado*/
+
+}
+
+.footer{
+    background-color: aqua;
+    padding: 24px;
+    color: #000000;
+    text-align: center;
+    font-family: "Montserrat" , sans-serif;
+    font-size: 20px;
+
+}
+
