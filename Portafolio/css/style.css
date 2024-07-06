@@ -1,0 +1,179 @@
+/*box model
+
+Para resetear los estilos por defecto de los 
+navegadores de forma efectiva, utilizamos 
+las propiedades margin, que define el margen en 
+los cuatro lados del elemento (arriba, derecha,
+ abajo, izquierda), y padding, que define el 
+ relleno interno en los mismos cuatro lados del
+  elemento,
+ ambas con un valor de 0.*/
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ /*@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');*/
+
+
+ /*variables en css*/
+:root{
+    --color-primario:rgb(128,128,128);
+    --color-secundario:#000000;
+    --color-terciario:#22D4FD;
+
+    --fuente-monserrat:"Montserrat", sans-serif;
+    --fuente-krona:"Krona One", sans-serif;
+}
+
+
+/*selector universal*/
+ *{
+    padding: 0;
+    margin:0;
+}
+
+.header{
+    /*Ajusta el relleno de la clase*/
+    padding:2% 0% 0% 15%; /*espaciar correctamente el contenido*/
+}
+
+.header_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:80px;/*espacio entre elementos*/
+}
+
+.header_menu_link{
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    color: var(--color-terciario); /*#333*/
+    margin: 0 10px; /*separacion del medio de home y sobre mi*/
+    /*display: flex;*/
+    text-decoration: none;
+    font-family: var(--fuente-monserrat);
+    font-weight: 600;/*400*/
+    
+}
+.header_menu_link:hover{
+    /*background-color:#22D4FD ;
+    border: 2px solid #0000ff;*/
+    color: #007bff;
+
+}
+
+body{
+    box-sizing: border-box; /*ancho y el alto totales de un elemento*/
+    background-color: var(--color-primario);
+    color:var(--color-secundario);
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    /*height: 100vh;/*altura*/
+    
+}
+/*
+strong{
+    color:aqua
+}
+    */
+h2{
+    font-weight: bold;
+}
+span{
+    color: var(--color-terciario);
+    border: 1px solid var(--color-terciario);
+    padding: 10px;
+}
+.titulo-destaque{
+    color: #00fd0e;;
+}
+
+.presentacion{
+    display: flex;/*flexbox: forma dinamica y diseño flexible*/
+    align-items: center; /*alinealos elementos del contenedor*/
+    /*margin:10% 15%; /*margen*//* agrega un margen para centrar los cuadrados en la pantalla */
+    justify-content: space-between;
+    /*Ajustando el espaciado interno de la presentación*/
+    /*Sustituye la propiedad margin por padding*/
+     padding: 5% 15%;/*Modifica el relleno de la clase,para alinear mejor el contenido con el encabezado*/
+    gap: 82px;
+}
+
+.presentacion_contenido{
+    width:50% ;/* 615pxancho*/
+    display:flex;
+    flex-direction: column;
+    /*tamaño de los espacios entre filas y columnas en diseños de cuadrícula*/
+    gap: 40px;
+}
+
+.presentacion_contenido_titulo{
+
+    font-size: 2.25rem;
+    font-family: var(--fuente-monserrat);
+}
+
+.presentacion_contenido_texto{
+    font-size: 1.5rem;
+    font-family: var(--fuente-monserrat);
+}
+
+.presentacion_enlaces{
+    display: flex;/* coloca los cuadrados uno al lado del otro */
+    
+    flex-direction: column;/*coloca el contenido de manera vertical*/
+    justify-content: space-between;
+    align-items: center;/*botones al centro*/
+    gap: 32px;  /* agrega espacios iguales entre cada cuadrado  32px*/
+    
+}
+
+.presentacion_enlaces_subtitulo{
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+    
+}
+
+.presentacion_enlaces_link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;/* valor de espaciado identificado en el Figma */
+    border:2px solid var(--color-terciario);/*dotted: puntos suspensivos alrededor de los botones*/
+    
+    width: 50%;/*378px*/
+    /*background-color: #22D4FD;*/
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;/*bordes de los enlaces sean redondeados*/
+    font-family: var(--fuente-monserrat);
+    font: size 1.5rem;;
+    font-weight: 600;
+    text-decoration: none;/*eliminar las decoraciones del elemento de anclaje*/
+    color:#f6f6f6; /*color*/
+    
+    
+    
+    
+    
+}
+
+.presentacion_enlaces_link:hover{
+    background-color: #272727;/*cambiar el color de fondo del botón a un tono de negro más claro al pasar el mouse sobre él*/
+    border:2px solid #0000ff;/*borde azul alrededor del botón cuando el mouse esté sobre él*/
+    /*cursor: pointer;/*cambiar el estilo del cursor a una mano con el dedo índice levantado*/
+
+}
+.presentacion_imagen{
+    width: 50%;
+}
+
+.footer{
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-secundario);
+    text-align: center;
+    font-family: var(--fuente-monserrat);
+    font-size: 1.5rem ; /*20*/
+    font-weight: 400;
+
+}
+
